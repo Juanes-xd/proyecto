@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/engancha
-    username: postgres
-    password: cr7juanes
+    url: ${env.URL_DATABASE}
+    username: ${env.USERNAME_DATABASE}
+    password: ${env.PASSWORD_DATABSE}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
